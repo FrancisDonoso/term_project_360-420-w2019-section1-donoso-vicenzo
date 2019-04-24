@@ -1,0 +1,60 @@
+Massimo Vicenzo
+Francis Donoso
+
+How Rough is a Country’s Border?
+
+
+Method 
+
+The goal of our term project is to find the roughness of Canada using Fractal dimension. Before we can find the roughness of Canada we must first determine how to calculate a fractal dimension. An easy example that shows how to find a fractal dimension is by using a self similar shape such as the Sierpinski Triangle.
+r = How much smaller is each triangle in order i than order i-1?
+N = The factor of how much the number of triangles increased by.
+D = Fractal Dimension
+We this method we can see that the fractal dimension of the Sierpinski Triangle fractal is 1.585.
+
+The outline of canada is not a self-similar shape, so to find its fractal dimension we would have to get creative. The approach that we will use is placing the border on a grid and counting how many boxes the border touches. We then scale the image by some factor and count again how many boxes the outline touches, the dimension could then be found by the following relationship.
+S = Scaling factor
+D = Fractal Dimension
+N = Number of Boxes 
+C = Some Constant
+
+N = C * (S^D)
+or
+Log (N) = Log C + D * Log (S)
+
+Now with this information we can create a graph, and the slope of the trendline of our graph will also be our fractal dimension. Our graph should look something like this…
+
+
+Finally, the fractal dimension found using this method is equal to the roughness of the border.
+
+Test Cases 
+
+To make sure that our code is executing properly, we can insert the border of Britain and Norway, whose fractal dimensions have been found using the same method, and if we receive the same answer then we will know that our code is correct. Once we know that our code works we can insert the border of Canada and find its roughness.
+
+
+
+
+
+Results
+
+
+Border
+Fractal Dimension (Roughness)
+Québec
+-
+Canada
+-
+Great Britain
+(Should be 1.21)
+Norway
+(Should be 1.52)
+
+
+References
+
+3Blue1Brown, “Fractals are typically not self-similar”, Published on Jan 27, 2017, Consulted on April 2nd, 2019,  https://youtu.be/gB9n2gHsHN4 
+
+“Fractal Dimension.” Fractal Foundation Online Course - Chapter 1 - FRACTALS IN NATURE, http://fractalfoundation.org/OFC/OFC-10-3.html 
+
+“Maps/Plans.” MERN, https://mern.gouv.qc.ca/english/maps/index.jsp  
+
