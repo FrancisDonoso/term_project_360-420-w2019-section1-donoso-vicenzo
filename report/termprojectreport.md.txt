@@ -32,7 +32,7 @@ Test Cases
 To make sure that our code is executing properly, we can insert the border of Britain and Norway, whose fractal dimensions have been found using the same method, and if we receive the same answer then we will know that our code is correct. Once we know that our code works we can insert the border of Canada and find its roughness.
 
 
-
+i'm going to add something here that changes the editore my boiiii
 
 
 Results
