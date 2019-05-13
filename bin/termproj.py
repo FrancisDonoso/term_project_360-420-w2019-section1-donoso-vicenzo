@@ -45,7 +45,7 @@ while (pixpblo >= 1):
     pixpblo = pixpblo/2
 print(ans)
 
-######################################
+######################################  #1.300594309 = m for 2048 uk
 double = 2
 nvalues = []
 indvalues = []
