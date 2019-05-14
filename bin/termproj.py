@@ -14,16 +14,16 @@ def checkblock(x,y,pixpblo):
             posy = y + a
             pos = (posx,posy)
             print("pixpblo: " + (str)(pixpblo) + " checked (" + (str)(posx) + ", " + (str)(posy) + ")")
-            if im.getpixel(pos) != (0,0) and im.getpixel(pos) != (255,255):
-                print(im.getpixel(pos))
+            if im.getpixel(pos) != (256) and im.getpixel(pos) != (1): # if this doesnt work, the image is most likely in a different mode
+                print(im.getpixel(pos))                           # meaning, this if statement needs to be changed
                 return 1
     return 0
 
 ######################################
 
-im = Image.open("UK.png")
+im = Image.open("Sierpinski_triangle.png")
 print (im.format, im.size, im.mode)
-#im.show()
+im.show()
 
 imasize = im.size[0]
 pixpblo = (int)((imasize)//2)
@@ -52,8 +52,8 @@ indvalues = []
 indvaluesreg = []
 for i in range(0,len(ans)):
     #n = math.log1p(((ans[i])/(ans[i+1]))-1)/math.log1p(0.5-1)  # we could try n = math.log1p(((ans[i])/(ans[i+1]))-1)/math.log1p(2-1)
-    nvalues.append(math.log1p(ans[i]))
-    indvalues.append(math.log1p(double))
+    nvalues.append(math.log1p(ans[i]-1))
+    indvalues.append(math.log1p(double-1))
     double = 2*double
 
 print(nvalues)
@@ -65,6 +65,8 @@ for i in range(0,len(ans)):
     indvaluesreg.append(m*indvalues[i]+b)
 
 str = (str)(m)
+plt.xlabel('Log of Scaling Factor')
+plt.ylabel('Log of Volume Ratio')
 plt.plot(indvalues, indvaluesreg)
-plt.title(str)
+plt.title('Slope for Sierpinski Triangle = ' + str)
 plt.show()
