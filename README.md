@@ -1,12 +1,10 @@
-# Term Project Sample Repository
-
-Use this repository to structure your term project submission.
+# Determining Fractal Dimension
+Coded in Python 3.7
 
 There are three folders:
- - *bin*: where you put your code
- - *data*: where you put any data that you generate, or that your code relies on for validation of your results
- - *report*: where you put files related to your final report
+ - *bin*: Contains code and the images required in order to run the code
+ - *data*: Contains Graphs and other pertinent results
+ - *report*: Unfinished (To be done after the presentation)
 
- Each folder has its own README.md, where you can include extra documentation for the reader.
-
- 
+ There is also one text file:
+ - *requirements.txt*: Has the required libraries listed

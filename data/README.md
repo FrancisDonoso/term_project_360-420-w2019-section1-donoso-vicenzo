@@ -2,7 +2,7 @@
 
 Included in this file are:
 
-  * Graphs of the 5 shapes we tested
+  * Graphs of the 5 shapes we tested.
     The plots compare the logarithm of the scaling factor versus the logarithm of the boxes filled.
     The slope of the regression line (a.k.a the dimension) is the title of the plot.
 
