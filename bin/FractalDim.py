@@ -14,8 +14,8 @@ def checkblock(x,y,pixpblo):
             posy = y + a
             pos = (posx,posy)
             print("pixpblo: " + (str)(pixpblo) + " checked (" + (str)(posx) + ", " + (str)(posy) + ")")
-            if im.getpixel(pos) != (0) and im.getpixel(pos) != (255): # put 0 and 255 for all images except
-                print(im.getpixel(pos))                           # for Sierpinski Triangle, replace 0 with 1
+            if im.getpixel(pos) != (0) and im.getpixel(pos) != (255):
+                print(im.getpixel(pos))
                 return 1
     return 0
 
