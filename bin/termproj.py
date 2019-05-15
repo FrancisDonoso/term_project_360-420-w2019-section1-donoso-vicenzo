@@ -14,14 +14,14 @@ def checkblock(x,y,pixpblo):
             posy = y + a
             pos = (posx,posy)
             print("pixpblo: " + (str)(pixpblo) + " checked (" + (str)(posx) + ", " + (str)(posy) + ")")
-            if im.getpixel(pos) != (256) and im.getpixel(pos) != (1): # put 0 and 255 for all images except
+            if im.getpixel(pos) != (0) and im.getpixel(pos) != (255): # put 0 and 255 for all images except
                 print(im.getpixel(pos))                           # for Sierpinski Triangle, put 1 and 256
                 return 1
     return 0
 
 ######################################
 
-im = Image.open("Sierpinski_triangle.png")
+im = Image.open("CANADANEW4096.png")
 print (im.format, im.size, im.mode)
 im.show()
 
@@ -68,5 +68,5 @@ str = (str)(m)
 plt.xlabel('Log of Scaling Factor')
 plt.ylabel('Log of Volume Ratio')
 plt.plot(indvalues, indvaluesreg)
-plt.title('Slope for Sierpinski Triangle = ' + str)
+plt.title('Slope for Canada = ' + str)
 plt.show()
